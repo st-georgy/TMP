@@ -1,0 +1,22 @@
+@startuml
+
+actor Покупатель
+actor Кассир
+
+usecase "Покупка билета" as UC1
+usecase "Выбор места" as UC2
+usecase "Ввод персональных данных" as UC3
+usecase "Прием оплаты" as UC4
+usecase "Оплата картой" as UC5
+usecase "Оплата наличными" as UC6
+usecase "Внос данных о продаже в базу" as UC7
+
+Покупатель --> UC1
+UC1 ..> UC2 : include
+UC1 ..> UC3 : include
+UC1 --> Кассир
+Кассир --> UC4
+UC4 ..> UC5 : extends
+UC4 ..> UC6 : extends
+Кассир --> UC7
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+actor Покупатель
+actor Кассир
+
+usecase "Сдача билета" as UC1
+usecase "Описание причины" as UC2
+usecase "Возврат денежных средств" as UC3
+usecase "Предоставление реквизитов карты" as UC4
+usecase "Выставление билета на продажу" as UC5
+usecase "Внос данных о возврате в базу" as UC6
+
+Покупатель --> UC1
+UC1 ..> UC2 : extends
+UC1 --> Кассир
+Кассир --> UC3
+UC3 ..> UC4 : uses
+Кассир --> UC5
+Кассир --> UC6
+
+@enduml

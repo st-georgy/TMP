@@ -1,0 +1,52 @@
+@startuml
+left to right direction
+
+class Матч {
+  +date : Timestamp
+  +teams : Text
+  +sponsor : String
+  +getGame() : Game
+}
+
+class Болельщик {
+  - phoneNumber : Bigint
+  - balance : Float
+  - email : String
+  + Pay() : Float
+}
+
+class БилетАбонемент {
+  + code : Bigint
+  + getActivateNum() : Int
+}
+
+class Кассир {
+  - orderProcessing : Order
+  + getTicket() : Boolean
+}
+
+class Касса {
+  - cost : Float
+  - employeeName : String
+  - currentClient : String
+  - orderProcessing : Order
+  + getPayment() : Boolean
+  + changeInfo(orderProcessing) : void
+  + issueCheque(employeeName) : String
+}
+
+class Человек {
+  firstName : String
+  lastName : String
+  + setName(firstname, lastname) : void
+  + getName() : String
+}
+
+Человек --> Болельщик : extends
+Человек --> Кассир : extends
+Болельщик --> Кассир : Покупает билет
+Кассир --> Касса : Проводит оплату
+Кассир --> БилетАбонемент : Выдает
+Болельщик --> Матч : Смотрит
+Матч --> БилетАбонемент
+@enduml
