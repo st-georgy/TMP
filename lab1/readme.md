@@ -22,5 +22,5 @@ rectangle Банкомат {
 @enduml
 ```
 
-![alt text](https://github.com/st-georgy/TMP/tree/master/lab1/img/1.png)
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab1/img/1.png)
 

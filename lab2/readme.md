@@ -24,7 +24,7 @@ UC4 ..> UC6 : extends
 @enduml
 ```
 
-![alt text](https://github.com/st-georgy/TMP/tree/master/lab2/img/1-1.png)
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/1-1.png)
 
 # Диаграмма использования возврата билета
 ```
@@ -51,7 +51,7 @@ UC3 ..> UC4 : uses
 @enduml
 ```
 
-![alt text](https://github.com/st-georgy/TMP/tree/master/lab2/img/1-2.png)
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/1-2.png)
 
 #Диаграмма классов
 ```
@@ -109,4 +109,4 @@ class Человек {
 @enduml
 ```
 
-![alt text](https://github.com/st-georgy/TMP/tree/master/lab2/img/1-3.png)
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/1-3.png)
