@@ -53,7 +53,7 @@ UC3 ..> UC4 : uses
 
 ![alt text](https://github.com/st-georgy/TMP/blob/master/lab1/img/1-2.png)
 
-#Диаграмма классов
+# Диаграмма классов
 ```
 @startuml
 left to right direction
