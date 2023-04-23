@@ -1,5 +1,3 @@
-# Диаграмма последовательностей
-```
 @startuml
 actor Покупатель
 participant Кассир
@@ -29,26 +27,3 @@ deactivate Касса
 deactivate Кассир
 deactivate Покупатель
 @enduml
-```
-
-![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/2-1.png)
-
-# Диаграмма развертывания
-```
-@startuml
-database БД_Продаж
-node Касса <<Интерфейс оплаты>>
-node Принтер <<Печать билетов>>
-rectangle Приложение {
-node Касса_1 <<Приложение кассира>>
-node Касса_2 <<Приложение кассира>>
-node Касса_3 <<Приложение кассира>>
-}
-
-Касса - Приложение
-БД_Продаж - Приложение
-Принтер - Приложение
-@enduml
-```
-
-![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/2-2.png)

@@ -1,3 +1,5 @@
+# Диаграмма
+```
 @startuml
 skin rose
 title Банкомат
@@ -18,3 +20,7 @@ rectangle Банкомат {
 (Проверка пин-кода) --- Банк
 }
 @enduml
+```
+
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab0/img/1.png)
+
