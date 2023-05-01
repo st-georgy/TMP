@@ -1,4 +1,8 @@
-# Диаграмма последовательностей
+# Лабораторная работа №2
+Диаграмма последовательностей и развертывания
+
+## Диаграмма последовательностей
+[UML-диаграмма](uml_diagram_sequence.puml)
 ```
 @startuml
 actor Покупатель
@@ -33,7 +37,8 @@ deactivate Покупатель
 
 ![alt text](https://github.com/st-georgy/TMP/blob/master/lab2/img/2-1.png)
 
-# Диаграмма развертывания
+## Диаграмма развертывания
+[UML-диаграмма](uml_diagram_sequence.puml)
 ```
 @startuml
 database БД_Продаж

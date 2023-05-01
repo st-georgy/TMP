@@ -1,4 +1,8 @@
-# Диаграмма использования покупки билета
+# Лабораторная работа №1
+Диаграмма использования и классов
+
+## Диаграмма использования покупки билета
+[UML-диаграмма](uml_diagram_usecase_1.puml)
 ```
 @startuml
 
@@ -26,7 +30,8 @@ UC4 ..> UC6 : extends
 
 ![alt text](https://github.com/st-georgy/TMP/blob/master/lab1/img/1-1.png)
 
-# Диаграмма использования возврата билета
+## Диаграмма использования возврата билета
+[UML-диаграмма](uml_diagram_usecase_2.puml)
 ```
 @startuml
 
@@ -53,7 +58,8 @@ UC3 ..> UC4 : uses
 
 ![alt text](https://github.com/st-georgy/TMP/blob/master/lab1/img/1-2.png)
 
-# Диаграмма классов
+## Диаграмма классов
+[UML-диаграмма](uml_diagram_class.puml)
 ```
 @startuml
 left to right direction
