@@ -4,7 +4,7 @@
 ## Стратегия
 [Реализация на языке C#](strategy/)
 
-###### [UML-диаграмма](strategy/strategy.puml)
+[UML-диаграмма](strategy/strategy.puml)
 ```
 @startuml
 interface IInterestRateStrategy {
@@ -37,7 +37,7 @@ IInterestRateStrategy <|.. HighInterestRateStrategy
 ## Шаблонный метод
 [Реализация на языке C#](template/)
 
-###### [UML-диаграмма](template/template.puml)
+[UML-диаграмма](template/template.puml)
 ```
 @startuml
 abstract class Account {
