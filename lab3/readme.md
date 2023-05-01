@@ -79,4 +79,4 @@ Account <|-- CreditAccount
 @enduml
 ```
 
-![alt text](https://github.com/st-georgy/TMP/blob/master/lab3/img/templ.png)
+![alt text](https://github.com/st-georgy/TMP/blob/master/lab3/img/templ-uml.png)
