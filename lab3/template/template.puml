@@ -1,0 +1,38 @@
+@startuml
+abstract class Account {
+    -payments: Payment[]
+    +ProcessPayments()
+    +GetPayments()
+    +CalculateFee()
+    +TransferMoney()
+    +WriteToLog()
+    {abstract} +ProcessPayment(Payment payment)
+}
+
+class SavingsAccount {
+    +ProcessPayment(Payment payment)
+    +CalculateFee()
+    +TransferMoney()
+    +WriteToLog()
+}
+
+class CreditAccount {
+    +ProcessPayment(Payment payment)
+    +TransferMoney()
+    +WriteToLog()
+}
+
+class Payment {
+    -amount: decimal
+    -fromAccount: string
+    -toAccount: string
+    +Payment(amount: decimal, fromAccount: string, toAccount: string)
+    +Amount(): decimal
+    +FromAccount(): string
+    +ToAccount(): string
+}
+
+Account <|-- SavingsAccount
+Account <|-- CreditAccount
+
+@enduml
