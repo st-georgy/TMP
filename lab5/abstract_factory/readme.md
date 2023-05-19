@@ -2,15 +2,15 @@
 Реализация на языке C# в рамках Лабораторной работы №5
 
 ## Структура
-* [BankFactory](BankFactory.cs) - абстрактная фабрика, которая будет создавать конкретные объекты
-* [IBankAccount](IBankAccount.cs) - интерфейс банковского аккаунта
-* [ICreditCard](ICreditCard.cs) - интерфейс кредитной карты 
-* [ICreditProduct](ICreditProduct.cs) - интерфейс кредитного продукта
-* [AlphaBankFactory](AlphaBankFactory.cs) - фабрика банка "Альфа"
-* [AlphaBankAccount](AlphaBankAccount.cs) - банковский аккаунт банка "Альфа"
-* [AlphaCreditCard](AlphaCreditCard.cs) - кредитная карта банка "Альфа"
-* [AlphaCreditProduct](AlphaCreditProduct.cs) - кредитный продукт банка "Альфа"
-* [BankClient](BankClient.cs) - клиентский класс, который использует абстрактную фабрику для создания конкретных объектов
+* [BankFactory](abstract/BankFactory.cs) - абстрактная фабрика, которая будет создавать конкретные объекты
+* [IBankAccount](abstract/IBankAccount.cs) - интерфейс банковского аккаунта
+* [ICreditCard](abstract/ICreditCard.cs) - интерфейс кредитной карты 
+* [ICreditProduct](abstract/ICreditProduct.cs) - интерфейс кредитного продукта
+* [AlphaBankFactory](concrete/AlphaBankFactory.cs) - фабрика банка "Альфа"
+* [AlphaBankAccount](concrete/AlphaBankAccount.cs) - банковский аккаунт банка "Альфа"
+* [AlphaCreditCard](concrete/AlphaCreditCard.cs) - кредитная карта банка "Альфа"
+* [AlphaCreditProduct](concrete/AlphaCreditProduct.cs) - кредитный продукт банка "Альфа"
+* [BankClient](client/BankClient.cs) - клиентский класс, который использует абстрактную фабрику для создания конкретных объектов
 * [Program](Program.cs) - пример действия
 
 ## Диаграмма
