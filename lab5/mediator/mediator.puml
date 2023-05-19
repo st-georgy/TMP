@@ -1,0 +1,32 @@
+@startuml
+
+interface IBankMediator {
+    + SendTransfer(sender: BankAccount, receiver: BankAccount, amount: decimal)
+    + SendWithdrawal(sender: BankAccount, amount: decimal)
+}
+
+class BankMediator {
+    + SendTransfer(sender: BankAccount, receiver: BankAccount, amount: decimal)
+    + SendWithdrawal(sender: BankAccount, amount: decimal)
+}
+
+class BankAccount {
+    - accountNumber: string
+    - balance: decimal
+    - accountHolder: string
+    - accountType: string
+    - bankMediator: IBankMediator
+    + BankAccount(accountNumber: string, balance: decimal, accountHolder: string, accountType: string, bankMediator: IBankMediator)
+    + Withdraw(amount: decimal): bool
+    + Transfer(receiver: BankAccount, amount: decimal): bool
+    + Deposit(amount: decimal)
+    + GetAccountNumber(): string
+    + GetBalance(): decimal
+    + GetAccountHolder(): string
+    + GetAccountType(): string
+}
+
+IBankMediator <|.. BankMediator
+BankMediator ..> BankAccount
+
+@enduml
