@@ -7,3 +7,4 @@
 - [Лабораторная работа №3](lab3/) - Стратегия (Strategy) и Шаблонный метод (Template Method)
 - [Лабораторная работа №4](lab4/) - Итератор (Iterator) и Посетитель (Visitor)
 - [Лабораторная работа №5](lab5/) - Абстрактная фабрика (Abstract Factory). Строитель (Builder). Адаптер (Wrapper, Adapter). Посредник (Intermediary, Controller, Mediator).
+- [Лабораторная работа №6](lab6/) - Инверсия управления (Inversion of Control). Заместитель (Proxy). Компоновщик (Дерево, Composite).
